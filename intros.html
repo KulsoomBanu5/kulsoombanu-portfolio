@@ -1,0 +1,298 @@
+
+
+           
+           <!DOCTYPE html>
+           <html lang="en">
+           <head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Introduction</title>
+               <!-- <link rel="stylesheet" href="projects.css"> -->
+               <style>
+                .bio{
+                    /* background-color: #242426; */
+                    background-image: url('blueee.png');
+                }
+                   body {
+                       font-family: Arial, sans-serif;
+                       background-image: url('blueee.png');
+                       /* background-color:gray; */
+                       margin: 0;
+                       padding: 0;
+                   }
+                   .center{
+                    text-align: center;
+                    color:white;
+                        }
+                    .center h3{
+                        color:var(--text-color);
+                        font-size: 45px;
+                        font-weight: 400;
+                        letter-spacing: 6px;
+                    }
+                    .box{
+                        background: #0b0b13;
+                        color:white;
+                        padding:60px 35px;
+                        border-radius: 5px;
+                        cursor:pointer;
+                        transition: all .40s;
+                    }
+                    .box h3{
+                        font-size: 1.25 rem;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                        color:var(--text-color);
+                    }
+                    .box h6{
+                        color:#3e4455;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                    .box h4{
+                        color:var(--text-color);
+                        font-size: 1.3 rem;
+                        font-weight: 700;
+                        margin-top: 25px;
+                        margin-bottom: 13px;
+                    }
+                
+                    .box p{
+                        font-size: var(--p-font);
+                        font-weight: 400;
+                        margin-bottom: 1.2 rem;
+                        line-height: 1.8rem;
+                        color:var(--2nd-main-color);
+                        /* line-height: 30px; */
+                    }
+                    .box h5{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color:var(--2nd-main-color);
+                    }
+                    .box:hover{
+                        transform: translateY(-15px);
+                        box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%) ;
+                    }
+                    .resume-content{
+                        display: grid;
+                        grid-auto-columns: repeat(auto-fit,minmax(300px,auto));
+                        grid-gap: 4rem;
+                        align-items: center;
+                        margin-top: 4rem;
+                    }
+
+           
+                   .container {
+                       max-width:1000px;
+                       margin: 30px auto;
+                       padding:10px;
+                       background-image: url('blueee.png');
+                       /* background-color:white; */
+                       border-radius: 8px;
+                       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                       animation: fadeIn 1s ease-in-out;
+                   }
+           
+                   .containers {
+                       max-width:800px;
+                       margin:10px auto;
+                       padding:10px;
+                       /* background-image: url('bluee.jpg'); */
+                       background-color: rgb(243, 246, 250);
+                       border-radius: 8px;
+                       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+                   }
+           
+                   h1{
+                       color:black;
+                       font-weight: bolder;
+                       animation: slideInDown 1s ease-in-out;
+                   }
+                   h2{
+                    color:white;
+                       font-weight: bolder;
+                       animation: slideInDown 1s ease-in-out;
+                   }
+                   .about-me {
+            background-color: #f3ebeb; /* Light gray background */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-me p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+           
+                   ul {
+                       list-style-type: none;
+                       padding: 0;
+                   }
+           
+                   li {
+                       margin-bottom: 20px;
+                       animation: slideInLeft 1s ease-in-out;
+                   }
+           
+                   .progress-container {
+                       display: flex;
+                       align-items: center;
+                       margin-bottom: 10px;
+                       animation: slideInRight 1s ease-in-out;
+                   }
+           
+                   .language-name {
+                       width: 100px;
+                       text-align: right;
+                       padding-right: 10px;
+                   }
+           
+                   .progress-bar {
+                       width: 100%; /* Changed width to 100% */
+                       height: 30px;
+                       background-color: #e0e0e0; /* Light gray background */
+                       border-radius: 5px;
+                       overflow: hidden;
+                       position: relative;
+                   }
+           
+                   .progress-bar span {
+                       display: block;
+                       height: 100%;
+                       line-height: 30px;
+                       text-align: center;
+                       color: white;
+                       position: absolute;
+                       width: var(--progress-width);
+                       background-color: #621372; /* Darker purple color */
+                       transition: width 1s ease-in-out;
+                   }
+           
+                   @keyframes slideInDown {
+                       from {
+                           transform: translateY(-100%);
+                           opacity: 0;
+                       }
+                       to {
+                           transform: translateY(0);
+                           opacity: 1;
+                       }
+                   }
+           
+                   @keyframes slideInLeft {
+                       from {
+                           transform: translateX(-100%);
+                           opacity: 0;
+                       }
+                       to {
+                           transform: translateX(0);
+                           opacity: 1;
+                       }
+                   }
+           
+                   @keyframes slideInRight {
+                       from {
+                           transform: translateX(100%);
+                           opacity: 0;
+                       }
+                       to {
+                           transform: translateX(0);
+                           opacity: 1;
+                       }
+                   }
+           
+                   @keyframes fadeIn {
+                       from {
+                           opacity: 0;
+                       }
+                       to {
+                           opacity: 1;
+                       }
+                   }
+               </style>
+           </head>
+           <body>
+               <div class="container">
+                <div class="about-me">
+                   <h1>About Me</h1>
+                   <ul>
+                       <li>
+                           <p>Hello there! I'm Shaik Kulsoom Banu, a second-year student pursuing a Bachelor's degree in Computer Science and Engineering at SRM University AP. As I navigate through my academic journey, I'm diligently honing my skills to carve a path towards becoming a proficient software developer.</p>
+                       </li>
+                       <li>
+                           <p>As a budding software developer, I'm super passionate about solving problems with code. I love creating new solutions that help people. Technology moves fast, but I'm always up for the challenge, seeing every problem as a chance to learn and get better. I'm determined to make a positive impact through my work.</p>
+                       </li>
+                   </ul>
+                </div>
+                   <center><h2>Language Proficiency:</h2></center>
+                   <div class="containers">
+                       <div class="progress-container">
+                           <div class="language-name">HTML:</div>
+                           <div class="progress-bar" style="--progress-width: 85%;"><span>85%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">CSS:</div>
+                           <div class="progress-bar" style="--progress-width: 70%;"><span>70%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">JavaScript:</div>
+                           <div class="progress-bar" style="--progress-width: 60%;"><span>60%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">C:</div>
+                           <div class="progress-bar" style="--progress-width: 85%;"><span>85%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">C++:</div>
+                           <div class="progress-bar" style="--progress-width: 75%;"><span>75%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">SQL:</div>
+                           <div class="progress-bar" style="--progress-width: 50%;"><span>50%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">Python:</div>
+                           <div class="progress-bar" style="--progress-width: 70%;"><span>70%</span></div>
+                       </div>
+                       <div class="progress-container">
+                           <div class="language-name">DSA:</div>
+                           <div class="progress-bar" style="--progress-width: 72%;"><span>72%</span></div>
+                       </div>
+                   </div>
+               </div>
+               <section class="bio" id="bio">
+                <div class="center">
+                    <h3>My Education</h3>
+                </div>
+                <div class="resume-content">
+                    <div class="box">
+                        <img src="srmuap.png" alt="TO" height="80px" width="100px">
+                        <h6>November 2022-2026</h6>
+                        <h4>B.Tech-Computer Science and Engineering</h4>
+                        <p>Iam currently in my 4th semester in the field of CSE with an CGPA of 8.7</p>
+                        <h5>SRM University AP</h5>
+                    </div>
+                    <div class="box">
+                        <img src="chaitanya.jpg" alt="TO" height="90px" width="75px">
+                        <h6>2020-2022</h6>
+                        <h4>Intermediate</h4>
+                        <p>Completed my Intermediate in Sri Chaitanya with 97%</p>
+                        <h5>Sri Chaitanya Junior College-Narasaraopet</h5>
+                    </div>
+                    <div class="box">
+                        <img src="school.png" alt="TO" height="70px" width="75px">
+                        <h6>2020</h6>
+                        <h4>Elementary</h4>
+                        <p>Finished my entire schooling in the same school with 98% in SSC.</p>
+                        <h5>St.Joseph's High School-Prakash Nagar,Narasaraopet</h5>
+                    </div>
+                </div>
+
+               </section>
+           </body>
+           </html>
+            
+            
